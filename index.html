@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spice Garden | Authentic Indian Restaurant</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">🍛</span>
+                Spice<span>Garden</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#special">Specials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn">
+                    🛒 <span id="cartCount">0</span>
+                </button>
+
+                <a href="#menu" class="btn nav-order">Order Now</a>
+
+                <button class="menu-toggle" id="menuToggle">
+                    ☰
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <span class="hero-tag">WELCOME TO SPICE GARDEN</span>
+
+            <h1>
+                Taste The Magic Of
+                <span>Indian Flavours</span>
+            </h1>
+
+            <p>
+                Enjoy delicious North Indian, South Indian and
+                street food made with love, fresh ingredients
+                and authentic Indian spices.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#menu" class="btn">Explore Menu →</a>
+                <a href="#about" class="btn btn-outline">
+                    Discover More
+                </a>
+            </div>
+
+            <div class="hero-info">
+                <div>
+                    <strong>50+</strong>
+                    <small>Delicious Dishes</small>
+                </div>
+
+                <div>
+                    <strong>1000+</strong>
+                    <small>Happy Customers</small>
+                </div>
+
+                <div>
+                    <strong>4.9★</strong>
+                    <small>Customer Rating</small>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="features container">
+
+        <div class="feature-card">
+            <div class="feature-icon">🥗</div>
+            <h3>Fresh Ingredients</h3>
+            <p>Fresh vegetables and quality ingredients.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">👨‍🍳</div>
+            <h3>Expert Chefs</h3>
+            <p>Prepared by our experienced chefs.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🚚</div>
+            <h3>Fast Delivery</h3>
+            <p>Hot and delicious food delivered to you.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">❤️</div>
+            <h3>Made With Love</h3>
+            <p>Every dish is prepared with care.</p>
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about section-padding" id="about">
+
+        <div class="container about-grid">
+
+            <div class="about-images">
+                <img
+                    class="about-main-img"
+                    src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=700"
+                    alt="Traditional Indian food">
+
+                <div class="experience-box">
+                    <strong>10+</strong>
+                    <span>Years of<br>Experience</span>
+                </div>
+            </div>
+
+            <div class="about-content">
+
+                <span class="section-tag">ABOUT OUR RESTAURANT</span>
+
+                <h2>
+                    We Serve The Best
+                    <span>Indian Food</span>
+                    In Town
+                </h2>
+
+                <p>
+                    Welcome to Spice Garden, where traditional
+                    Indian flavours meet modern dining.
+
+                    We bring you the authentic taste of India,
+                    from spicy North Indian curries to delicious
+                    South Indian dosas and mouth-watering street food.
+                </p>
+
+                <p>
+                    Our goal is to provide fresh, tasty and
+                    affordable food with excellent service.
+                </p>
+
+                <div class="about-points">
+                    <p>✓ Authentic Indian Recipes</p>
+                    <p>✓ Fresh and Quality Ingredients</p>
+                    <p>✓ Affordable Prices</p>
+                    <p>✓ Friendly Service</p>
+                </div>
+
+                <a href="#menu" class="btn">Explore Our Menu</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MENU SECTION -->
+    <section class="menu-section section-padding" id="menu">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-tag">OUR SPECIAL MENU</span>
+                <h2>Explore Our <span>Delicious Food</span></h2>
+                <p>
+                    Discover the authentic taste of Indian cuisine.
+                </p>
+            </div>
+
+            <!-- CATEGORY FILTERS -->
+            <div class="filter-buttons">
+
+                <button class="filter-btn active" data-category="All">
+                    All Food
+                </button>
+
+                <button class="filter-btn" data-category="North Indian">
+                    North Indian
+                </button>
+
+                <button class="filter-btn" data-category="South Indian">
+                    South Indian
+                </button>
+
+                <button class="filter-btn" data-category="Street Food">
+                    Street Food
+                </button>
+
+                <button class="filter-btn" data-category="Chats">
+                    Chats
+                </button>
+
+            </div>
+
+            <!-- FOOD CARDS -->
+            <div class="food-grid" id="foodGrid">
+
+                <!-- JavaScript loads food cards here -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SPECIAL OFFER -->
+    <section class="special-section section-padding" id="special">
+
+        <div class="container special-content">
+
+            <div>
+                <span class="special-tag">TODAY'S SPECIAL OFFER</span>
+
+                <h2>
+                    Enjoy Delicious Food
+                    With <span>20% OFF</span>
+                </h2>
+
+                <p>
+                    Enjoy your favourite Indian dishes with
+                    exciting special offers.
+                </p>
+
+                <a href="#menu" class="btn">
+                    Order Your Favourite Food →
+                </a>
+            </div>
+
+            <div class="special-image">
+                <img
+                    src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=700"
+                    alt="Indian curry special offer">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials section-padding">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-tag">CUSTOMER REVIEWS</span>
+                <h2>What Our Customers <span>Say</span></h2>
+            </div>
+
+            <div class="review-grid">
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        "Amazing food! The butter chicken and naan
+                        were delicious. I will definitely visit again."
+                    </p>
+
+                    <h4>Rahul Sharma</h4>
+                    <small>Happy Customer</small>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        "The masala dosa was crispy and tasty.
+                        Loved the authentic South Indian flavours."
+                    </p>
+
+                    <h4>Priya Patel</h4>
+                    <small>Happy Customer</small>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        "Best place for Indian street food.
+                        The pani puri and pav bhaji are amazing!"
+                    </p>
+
+                    <h4>Amit Verma</h4>
+                    <small>Happy Customer</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section section-padding" id="contact">
+
+        <div class="container contact-grid">
+
+            <div class="contact-info">
+
+                <span class="section-tag">GET IN TOUCH</span>
+
+                <h2>Visit Our <span>Restaurant</span></h2>
+
+                <p>
+                    We would love to serve you.
+                    Visit us or contact us for more information.
+                </p>
+
+                <div class="contact-detail">
+                    <span>📍</span>
+                    <div>
+                        <h4>Our Location</h4>
+                        <p>Mumbai, Maharashtra, India</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <span>📞</span>
+                    <div>
+                        <h4>Phone Number</h4>
+                        <p>+91 98765 43210</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <span>✉️</span>
+                    <div>
+                        <h4>Email Address</h4>
+                        <p>hello@spicegarden.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <span>🕒</span>
+                    <div>
+                        <h4>Opening Hours</h4>
+                        <p>Monday - Sunday: 10 AM - 11 PM</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- RESERVATION FORM -->
+            <form class="contact-form" id="reservationForm">
+
+                <h3>Book A Table</h3>
+
+                <p>Reserve your table with us today.</p>
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    id="customerEmail"
+                    placeholder="Your Email"
+                    required>
+
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="Phone Number"
+                    pattern="[0-9+\-\s]{10,15}"
+                    required>
+
+                <input
+                    type="date"
+                    id="bookingDate"
+                    required>
+
+                <select id="guestCount" required>
+                    <option value="">Number of Guests</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6">6+ People</option>
+                </select>
+
+                <button type="submit" class="btn">
+                    Book A Table
+                </button>
+
+                <p id="formMessage" class="form-message"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- CART MODAL -->
+    <div class="cart-modal" id="cartModal">
+
+        <div class="cart-content">
+
+            <div class="cart-header">
+                <h2>Your Cart 🛒</h2>
+                <button id="closeCart" class="close-btn">×</button>
+            </div>
+
+            <div id="cartItems">
+                <p class="empty-cart">Your cart is empty!</p>
+            </div>
+
+            <div class="cart-footer">
+                <h3>
+                    Total:
+                    <span id="cartTotal">₹0</span>
+                </h3>
+
+                <button class="btn checkout-btn" id="checkoutBtn">
+                    Place Order
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-about">
+
+                <a href="#" class="logo footer-logo">
+                    🍛 Spice<span>Garden</span>
+                </a>
+
+                <p>
+                    Bringing authentic Indian flavours
+                    to your table. Fresh food, great taste
+                    and unforgettable memories.
+                </p>
+
+                <div class="social-links">
+                    <a href="#">f</a>
+                    <a href="#">𝕏</a>
+                    <a href="#">◎</a>
+                </div>
+
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#special">Special Offers</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div>
+                <h3>Our Categories</h3>
+                <a href="#menu">North Indian</a>
+                <a href="#menu">South Indian</a>
+                <a href="#menu">Street Food</a>
+                <a href="#menu">Chats</a>
+            </div>
+
+            <div>
+                <h3>Contact Us</h3>
+                <p>📍 Mumbai, India</p>
+                <p>📞 +91 98765 43210</p>
+                <p>✉️ hello@spicegarden.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © 2026 Spice Garden Restaurant.
+                All Rights Reserved.
+            </p>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
