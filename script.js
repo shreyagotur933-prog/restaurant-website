@@ -34,7 +34,7 @@ const foods = [
         price: 180,
         rating: "★★★★★",
         description: "Aromatic basmati rice with vegetables and spices.",
-        image: "https://images.unsplash.com/photo-1563379091339-03246963d96c?w=600"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcI-aAcHiQ5OS2GCsTq90ZqQl4W8hqUygWCmz-mCMMdg&s=10"
     },
 
     {
